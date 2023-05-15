@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+          <script>
+            
+                 function f2()
+                 {
+                      
+                     let x=document.getElementById("r1").value
+                   //  let v= new Date(x);
+                        let c=new Date(x);
+                        let day= document.getElementById("p1").innerText=c
+
+                     switch(c.getDay())
+                     {
+
+                        case 1:
+                             day="Monday"
+                             break;
+
+                             case 2:
+                             day="Tusday"
+                             break;
+                             
+                             case 3:
+                             day="wednesday"
+                             break;
+                             
+                             case 4:
+                             day="Thursday"
+                             break;
+                             
+                             case 5:
+                             day="Friday"
+                             break;
+                             
+                             case 6:
+                             day="Saturday"
+                             break;
+                             
+                             case 0:
+                             day="sunday"
+                             break;
+                             
+
+                     }
+
+                     
+
+                 }
+                        
+            </script>
+
+</head>
+<body>
+        
+      <input type="date" id="r1" onchange="f2()"></input>
+       <p id="p1"></p>
+
+
+     
+</body>
+</html>

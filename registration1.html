@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <br><br><br>
+        <center>
+                <table border="1" width="400px;" style="background-color:cyan;">
+                <thead>
+                <td>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+<script>
+          function correct(){
+            
+            let ele=document.getElementById("n1")
+            console.log(ele.checkValidity());
+            if(ele.checkValidity())
+          {
+            document.getElementById("p1").innerText= "OK"
+           }
+            else
+            document.getElementById("p1").innerText= ele.validationMessage
+
+            let ele2 =document.getElementById("e1")
+            console.log(ele2.checkValidity())
+             if(ele2.checkValidity())
+             {
+                  document.getElementById("p2").innerText="OK"
+             }
+               else
+                   document.getElementById("p2").innerText=ele2.validationMessage
+
+             let ele3=document.getElementById("d1")
+             console.log(ele3.checkValidity())
+             if(ele3.checkValidity())
+             {
+                 document.getElementById("p3").innerText="OK"
+             }     
+             else
+             
+                 document.getElementById("p3").innerText=ele3.validationMessage
+             
+            }
+              
+
+
+
+</script>
+
+</head>
+<body>
+   <b> name: <input type="text"  required id="n1" minlength="8" maxlength="20"/></b>
+             <p id="p1" ></p>
+     <b> Email:  <input type="Email"  id="e1" minlength="8" maxlength="20" required/><b>
+      <p id="p2" ></p>
+      <b>DOB:<input type="number"  id="d1" min="18" max="100" required/><b>
+      <p id="p3" ></p>
+      <input type="button" value="check" onclick="correct()"/>
+      <input type="submit"  onsubmit="correct()" action="./welcome.html"/>
+    </body>
+
+</td>
+</thead>
+</table>
+</center>
+
+</html>

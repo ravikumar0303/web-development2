@@ -1,0 +1,55 @@
+
+<html>
+
+
+<br><br><br>
+    <center>
+    <style>
+        
+          .iet * {
+            display: block;   
+              border: 2px solid red;
+            color: rgb(67, 22, 150);
+             padding: 5px;
+             margin: 15px;
+          }
+             #p1 {
+                display: solidblock;   
+                border: 2px solid rgb(0, 255, 76);
+                color: rgb(24, 22, 150);
+                padding: 20px;
+                margin: 15px;
+        }
+    </style>
+
+   <script src="jquery-3.6.0.js"></script>
+
+   <script>
+   $(document).ready(function(){
+       $("div").find("span").css({"color":"yellow","border":"5px blue"})
+       
+   })
+
+  </script>
+   </head>
+   <body>
+
+    <b><div class="iet" style="width:400px;"> present div 
+      <p> r(child)
+       <span>
+           span1
+           <span> span 2
+               <span> span 3
+                   </span>
+                   </span>
+      
+                 </span>
+        </p>
+         <br><br>
+         <p id="p1"> r1 (child)
+             <span> span (grand-child)</span>
+            </p>
+        </div> <b>
+            </body>
+        </center>
+</html>>

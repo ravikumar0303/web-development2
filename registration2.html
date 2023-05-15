@@ -1,0 +1,49 @@
+<html>
+<script>
+function validate()
+{
+    let result,rname,remail,rdob
+  
+
+    let v =document.forms["form1"]["rname"].value
+   
+    if(v.trim()=="" || v.length>=2 || !isNaN(v) ){
+        rname=false
+        alert("name cannot be empty or less than 2 chars")
+        document.forms["form1"]["rname"].focus()
+      
+    }
+    else
+    {
+        rname=true
+    }
+
+   
+    let dob = document.forms.form1.rage.value
+    
+    if(dob > 18){
+       agev=false
+       alert("Age cannot be less than 18")
+       document.forms.form1.sage.focus()
+    }
+    else
+        rage=true
+    
+    return rname && rdob
+}
+</script>
+<body>
+    <form name="form1" onsubmit="return validate()" action="./welcome.html">
+        Name:<input type="text" name="rname"/>
+        <!-- Email :<input type="number" name="remail"/> -->
+        DOB :<input type="number" name="rdob"/>
+        
+
+        <input type="submit" value="submit" /> 
+    </form>
+    
+
+
+
+</body>
+</html>
